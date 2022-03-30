@@ -4,10 +4,10 @@
 
 ## Description
 ### General information:
-1. Here is a fully responsive landing page
+1. Here is a responsive landing page
 
 2. Features:
-  - interactive links and buttons (even Facebook, Twitter, Instagram icons)
+  - interactive links and buttons
   - hover effects applied to every card in sections **Compare Bikes** and **Details**
 
 ### Tech stack:
