@@ -1,22 +1,10 @@
 'use strict';
 
-/* TODO find a solution
-const menuLink = document.querySelector('.menu__link');
-const menuLinkContent = menuLink.textContent;
-console.log(menuLinkContent);
-
-menuLink.onclick = () => {
-  document.title = menuLinkContent;
-}
-*/
-
 window.addEventListener('hashchange', () => {
   if (window.location.hash === '#menu') {
     document.body.classList.add('page__body--menu-on');
-    /*    console.log('action: menu on'); */
   } else {
     document.body.classList.remove('page__body--menu-on');
-    /*    console.log('action: menu off'); */
   }
 });
 
