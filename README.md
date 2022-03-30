@@ -7,8 +7,8 @@
 1. Here is a responsive landing page
 
 2. Features:
-    - interactive links and buttons
-    - hover effects applied to every card in sections **Compare Bikes** and **Details**
+   - interactive links and buttons
+   - hover effects applied to every card in sections **Compare Bikes** and **Details**
 
 ### Tech stack:
 - HTML5
