@@ -1,0 +1,16 @@
+.top-actions {
+  $icon-size: 24px;
+
+  display: grid;
+  grid-template-columns: 1fr repeat(2, $icon-size);
+  align-items: center;
+  gap: $icon-size;
+
+  @include onTablet {
+    $icon-size: 32px;
+  }
+
+  &--menu {
+    grid-template-columns: 1fr $icon-size;
+  }
+}

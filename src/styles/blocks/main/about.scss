@@ -1,0 +1,12 @@
+.about {
+  padding-top: 60px;
+  text-align: left;
+
+  @include onTablet {
+    padding-top: 120px;
+  }
+
+  &__description {
+    @include setFont(24px, inherit, 33px);
+  }
+}

@@ -1,0 +1,64 @@
+.page {
+  font-family: Poppins, Helvetica, sans-serif;
+
+  color: #fff;
+  background-color: $c-light-black;
+
+  scroll-behavior: smooth;
+
+  &__body {
+    margin: 0;
+
+    &--menu-on {
+      overflow: hidden;
+    }
+  }
+
+  &__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+
+    &:target {
+      z-index: 1;
+      transform: translateX(0);
+    }
+  }
+
+  &__section {
+    margin-bottom: 80px;
+
+    @include onTablet {
+      margin-bottom: 120px;
+    }
+
+    @include onDesktop {
+      margin-bottom: 160px;
+    }
+
+    &-title {
+      margin-bottom: 48px;
+
+      font-family: Poppins, Helvetica, sans-serif;
+      @include setFont(32px, 500, 100%);
+      text-align: center;
+
+      &--about {
+        margin-bottom: 32px;
+        text-align: left;
+      }
+
+      @include onTablet {
+        font-size: 48px;
+      }
+
+      @include onDesktop {
+        font-size: 64px;
+      }
+    }
+  }
+}

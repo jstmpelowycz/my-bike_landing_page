@@ -1,6 +1,27 @@
-@mixin hover($_property, $_toValue) {
-  transition: #{$_property} 0.3s;
-  &:hover {
-    #{$_property}: $_toValue;
+@mixin onDesktop {
+  @media (min-width: 1020px) {
+    @content;
+  }
+}
+
+@mixin onTablet {
+  @media (min-width: 744px) {
+    @content;
+  }
+}
+
+@mixin setFont($f-size, $f-weight, $l-height) {
+  font-size: $f-size;
+  font-weight: $f-weight;
+  line-height: $l-height;
+}
+
+@mixin buildGrid($col-num) {
+  @for $start from 1 through $col-num {
+    @for $end from $start through $col-num {
+      &-#{$start}-#{$end} {
+        grid-column: #{$start} / #{$end + 1};
+      }
+    }
   }
 }

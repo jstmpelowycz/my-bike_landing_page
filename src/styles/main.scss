@@ -1,7 +1,27 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "./reset";
+@import "./normalize";
 
-body {
-  background: $c-gray;
-}
+@import "./utils/colors";
+@import "./utils/vars";
+@import "./utils/extends";
+@import "./utils/mixins";
+
+@import "./blocks/page";
+@import "./blocks/container";
+
+@import "./blocks/header/logo";
+@import "./blocks/header/icon";
+@import "./blocks/header/header";
+@import "./blocks/header/top-actions";
+
+@import "blocks/header/menu";
+
+@import "./blocks/main/grid";
+@import "./blocks/main/about";
+@import "./blocks/main/card";
+@import "./blocks/main/details";
+@import "./blocks/main/button";
+@import "./blocks/main/contacts";
+@import "./blocks/main/form-field";
+
+@import "./blocks/footer/footer";

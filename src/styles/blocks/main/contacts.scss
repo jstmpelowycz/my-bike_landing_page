@@ -1,0 +1,38 @@
+.contacts {
+  &__form-label {
+    display: block;
+    margin-bottom: 16px;
+  }
+
+  &__info {
+    margin-top: 48px;
+
+    @include onTablet {
+      margin-top: 0;
+    }
+
+    &-title {
+      color: #ccc;
+      margin-bottom: 8px;
+      @include setFont(14px, inherit, 140%);
+    }
+
+    &-link {
+      display: block;
+
+      @include setFont(16px, 500, 140%);
+      color: #fff;
+      text-decoration: none;
+
+      @include onDesktop {
+        &:hover {
+          transform: translateX(10%) scale($item-hover-scale);
+        }
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
