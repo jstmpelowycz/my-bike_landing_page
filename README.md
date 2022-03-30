@@ -1,6 +1,6 @@
 # MyBike landing page
 - [LANDING DEMO LINK](https://jstmpelowycz.github.io/my-bike_landing_page/)
-- [FIGMA DESIGN LINK](https://www.figma.com/file/7qwsWggv9BAxMi2VPhBuPr/Air-(formerly-Dia)?node-id=9138%3A35)
+- [FIGMA DESIGN LINK](https://www.figma.com/file/Ic3SlZjkATYaS7uTifZAIk/BIKE)
 
 ## Description
 ### General information:
